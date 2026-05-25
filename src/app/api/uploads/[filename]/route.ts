@@ -3,6 +3,9 @@ import path from "node:path";
 import { NextResponse } from "next/server";
 import { safeUploadPath } from "@/lib/storage";
 
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
+
 const MIME: Record<string, string> = {
   ".jpg": "image/jpeg",
   ".jpeg": "image/jpeg",

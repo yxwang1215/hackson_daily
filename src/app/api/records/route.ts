@@ -6,6 +6,9 @@ import { analyzeImage } from "@/lib/ai";
 import { ensureUploadDir, safeUploadPath, uploadUrl } from "@/lib/storage";
 import { serializeRecord } from "@/lib/types";
 
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
+
 const MAX_IMAGE_SIZE = 10 * 1024 * 1024;
 const ALLOWED_TYPES = new Set(["image/jpeg", "image/png", "image/webp", "image/svg+xml"]);
 

@@ -2,6 +2,9 @@ import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { serializeRecord } from "@/lib/types";
 
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
+
 function asArray(value: unknown) {
   if (!Array.isArray(value)) return [];
   return value.map(String).map((item) => item.trim()).filter(Boolean);
