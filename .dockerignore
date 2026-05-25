@@ -1,0 +1,12 @@
+.git
+.next
+node_modules
+npm-debug.log*
+.env
+.env.local
+data/dev.db
+data/*.db
+data/*.db-journal
+data/uploads/*
+!data/uploads/.gitkeep
+photos_1.zip

@@ -4,6 +4,7 @@ dist
 coverage
 .env
 .env.local
+.env.production
 *.db
 *.db-journal
 data/dev.db
